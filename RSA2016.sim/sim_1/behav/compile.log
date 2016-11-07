@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.srcs/sources_1/imports/RSA_2016/blakley_RSA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity blakley_RSA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.srcs/sources_1/imports/RSA_2016/binary_RSA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity binary_RSA
