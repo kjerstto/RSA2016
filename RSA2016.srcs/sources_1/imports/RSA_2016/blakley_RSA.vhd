@@ -30,17 +30,17 @@ architecture rtl of blakley_RSA is
 
 	
 begin
+    R <= Rint(127 downto 0);
+
 	process(clk, resetn)
 	begin
 		if (resetn = '0') then --reset
 			state <= s0_idle;
 			Rint <= (others => '0');
-			R <= Rint(127 downto 0); 
 			i <= 0;
 			done <= '0';
 		elsif (clk'event and clk='1') then
 		  done <= '0';
-		  R <= Rint(127 downto 0); 
 			case state is
 				when s0_idle => --Set R to 0
 						Rint <= (others => '0');
