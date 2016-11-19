@@ -10,7 +10,7 @@ entity binary_RSA is
 		M 		: in std_logic_vector(127 downto 0);
 		exp 	: in std_logic_vector(127 downto 0);
 		n       : in std_logic_vector(127 downto 0);
-		C       : out std_logic_vector(127 downto 0);
+		C       : buffer std_logic_vector(127 downto 0);
 		calcFinished : out std_logic
 		
 	);
@@ -34,7 +34,6 @@ architecture rtl of binary_RSA is
 	end component;
 	
 	-- internal signals
-	signal Cint : std_logic_vector(127 downto 0);
 	constant k	 : integer := 128; 
 	signal i 	: integer;
 	-- internal signals for Blakley communication
@@ -57,35 +56,35 @@ begin
 		if (resetn = '0') then
 			state <= s1_idle;
 			blResetn <= '0';
-			Cint <= (others => '0');
+			C <= (others => '0');
 			i <= k - 2; 
 			calcFinished <= '0';
 		elsif (clk'event and clk='1') then
+		  calcFinished <= '0';
 			case state is
 				when s1_idle => -- set C to M or 1
-					calcFinished <= '0';
 					if (exp(k-1) = '1') then
-						Cint <= M; 
+						C <= M; 
 					else
-						Cint(0) <= '1';
+						C(0) <= '1';
 					end if;
 					state <= s2a_modSquare;
 				when s2a_modSquare => -- C = C*C mod n 
 					blResetn <= '1';
-					bla <= Cint; 
-					blb <= Cint; 
+					bla <= C; 
+					blb <= C; 
 					if(blDone = '1') then
-						Cint <= blR; 
+						C <= blR; 
 						blResetn <= '0';
 						state <= s2b_modmul;
 					end if;
 				when s2b_modmul => -- if ei=1 then C=C*M mod n
 					if(exp(i) = '1') then -- run C = C*M mod n
 						blResetn <= '1';
-						bla <= Cint; 
+						bla <= C; 
 						blb <= M; 
 						if(blDone ='1') then 
-							Cint <= blR;
+							C <= blR;
 							blResetn <= '0';
 							if(i>0) then --check loop
 								i <= i-1; 
@@ -103,7 +102,6 @@ begin
 						end if;
 					end if;
 				when s3_done => -- calcFinished
-					C <= Cint;
 					calcFinished <= '1'; 
 			end case;
 		end if; 

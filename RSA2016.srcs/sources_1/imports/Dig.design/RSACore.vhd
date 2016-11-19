@@ -25,7 +25,7 @@ component binary_RSA is
         M : in std_logic_vector(127 downto 0);
         exp : in std_logic_vector(127 downto 0);
         n : in std_logic_vector(127 downto 0);
-        C : out std_logic_vector(127 downto 0);
+        C : buffer std_logic_vector(127 downto 0);
         calcFinished : out std_logic
         );
 end component;
@@ -58,6 +58,7 @@ begin
         resetn_binary <= '0';
         count <= 0;
     elsif (Clk'event and Clk = '1') then
+        CoreFinished <= '1';
         case rsa_state is
             when idle =>
                 rsa_state <= wait_state;
@@ -74,6 +75,7 @@ begin
                     rsa_state <= read_m;
                 end if;            
             when read_e =>
+                CoreFinished <= '0';
                 if(count < 4) then
                     exp <= DataIn & exp(W_DATA*4 - 1 downto W_DATA); --read part 2-4 of e
                     count <= count + 1;
@@ -84,6 +86,7 @@ begin
                 end if;
             when read_n =>
                 if(count < 4) then
+                    CoreFinished <= '0';
                     n <= DataIn & n(W_DATA*4 - 1 downto W_DATA); --read part 2-4 f n
                     count <= count + 1;                    
                 else                    
@@ -92,6 +95,7 @@ begin
                     rsa_state <= wait_state;
                 end if;       
             when read_m =>
+                CoreFinished <= '0';
                 if(count < 4) then
                     M <= DataIn & M(W_DATA*4 - 1 downto W_DATA);
                     count <= count + 1;
@@ -100,6 +104,7 @@ begin
                     rsa_state <= RSA;
                 end if;           
             when RSA =>
+                CoreFinished <= '0';
                 resetn_binary <= '1';
                 if(RSA_finished = '1') then
                     Cshift <= C;
