@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="binary_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="binary_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="26" />
+   <wvobject db_ref_id="1" fp_name="/binary_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/resetn_tb" type="logic">
+      <obj_property name="ElementShortName">resetn_tb</obj_property>
+      <obj_property name="ObjectShortName">resetn_tb</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/M_tb" type="array">
+      <obj_property name="ElementShortName">M_tb[127:0]</obj_property>
+      <obj_property name="ObjectShortName">M_tb[127:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/e_tb" type="array">
+      <obj_property name="ElementShortName">e_tb[127:0]</obj_property>
+      <obj_property name="ObjectShortName">e_tb[127:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/n_tb" type="array">
+      <obj_property name="ElementShortName">n_tb[127:0]</obj_property>
+      <obj_property name="ObjectShortName">n_tb[127:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/Cint" type="array">
+      <obj_property name="ElementShortName">Cint[127:0]</obj_property>
+      <obj_property name="ObjectShortName">Cint[127:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/Cout" type="array">
+      <obj_property name="ElementShortName">Cout[127:0]</obj_property>
+      <obj_property name="ObjectShortName">Cout[127:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/C" type="array">
+      <obj_property name="ElementShortName">C[127:0]</obj_property>
+      <obj_property name="ObjectShortName">C[127:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/M" type="array">
+      <obj_property name="ElementShortName">M[127:0]</obj_property>
+      <obj_property name="ObjectShortName">M[127:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/calcFinished" type="logic">
+      <obj_property name="ElementShortName">calcFinished</obj_property>
+      <obj_property name="ObjectShortName">calcFinished</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/i" type="other">
+      <obj_property name="ElementShortName">i</obj_property>
+      <obj_property name="ObjectShortName">i</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/blResetn" type="logic">
+      <obj_property name="ElementShortName">blResetn</obj_property>
+      <obj_property name="ObjectShortName">blResetn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/blDone" type="logic">
+      <obj_property name="ElementShortName">blDone</obj_property>
+      <obj_property name="ObjectShortName">blDone</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/Blakley1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/Blakley1/resetn" type="logic">
+      <obj_property name="ElementShortName">resetn</obj_property>
+      <obj_property name="ObjectShortName">resetn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/Blakley1/a" type="array">
+      <obj_property name="ElementShortName">a[127:0]</obj_property>
+      <obj_property name="ObjectShortName">a[127:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/Blakley1/b" type="array">
+      <obj_property name="ElementShortName">b[127:0]</obj_property>
+      <obj_property name="ObjectShortName">b[127:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/Blakley1/n" type="array">
+      <obj_property name="ElementShortName">n[127:0]</obj_property>
+      <obj_property name="ObjectShortName">n[127:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/Blakley1/R" type="array">
+      <obj_property name="ElementShortName">R[127:0]</obj_property>
+      <obj_property name="ObjectShortName">R[127:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/Blakley1/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/Blakley1/Rint" type="array">
+      <obj_property name="ElementShortName">Rint[127:0]</obj_property>
+      <obj_property name="ObjectShortName">Rint[127:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/Blakley1/test" type="array">
+      <obj_property name="ElementShortName">test[127:0]</obj_property>
+      <obj_property name="ObjectShortName">test[127:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/Blakley1/i" type="other">
+      <obj_property name="ElementShortName">i</obj_property>
+      <obj_property name="ObjectShortName">i</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/binary_tb/dut/Blakley1/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+</wave_config>

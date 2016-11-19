@@ -8,7 +8,7 @@ entity binary_RSA is
 		clk		: in std_logic;
 		resetn	: in std_logic;
 		M 		: in std_logic_vector(127 downto 0);
-		e 		: in std_logic_vector(127 downto 0);
+		exp 	: in std_logic_vector(127 downto 0);
 		n       : in std_logic_vector(127 downto 0);
 		C       : out std_logic_vector(127 downto 0);
 		calcFinished : out std_logic
@@ -64,7 +64,7 @@ begin
 			case state is
 				when s1_idle => -- set C to M or 1
 					calcFinished <= '0';
-					if (e(k-1) = '1') then
+					if (exp(k-1) = '1') then
 						Cint <= M; 
 					else
 						Cint(0) <= '1';
@@ -80,7 +80,7 @@ begin
 						state <= s2b_modmul;
 					end if;
 				when s2b_modmul => -- if ei=1 then C=C*M mod n
-					if(e(i) = '1') then -- run C = C*M mod n
+					if(exp(i) = '1') then -- run C = C*M mod n
 						blResetn <= '1';
 						bla <= Cint; 
 						blb <= M; 

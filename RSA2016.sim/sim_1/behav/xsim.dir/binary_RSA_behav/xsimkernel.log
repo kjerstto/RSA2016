@@ -1,7 +1,0 @@
-Running: xsim.dir/binary_RSA_behav/xsimk.exe -simmode gui -wdb binary_RSA_behav.wdb -simrunnum 0 -socket 55994
-Design successfully loaded
-Design Loading Memory Usage: 22300 KB (Peak: 22300 KB)
-Design Loading CPU Usage: 265 ms
-Simulation completed
-Simulation Memory Usage: 22588 KB (Peak: 22588 KB)
-Simulation CPU Usage: 265 ms
