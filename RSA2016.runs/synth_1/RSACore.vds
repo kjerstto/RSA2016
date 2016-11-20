@@ -2,8 +2,8 @@
 # Vivado v2015.2 (64-bit)
 # SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
 # IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
-# Start of session at: Sat Nov 19 15:12:28 2016
-# Process ID: 804
+# Start of session at: Sat Nov 19 16:07:11 2016
+# Process ID: 1824
 # Log file: C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.runs/synth_1/RSACore.vds
 # Journal file: C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
@@ -14,31 +14,30 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: [Common 17-1223] The version limit for your license is '2016.09' and will expire in -50 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 245.957 ; gain = 72.590
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 245.801 ; gain = 72.238
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'RSACore' [C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.srcs/sources_1/imports/Dig.design/RSACore.vhd:19]
-INFO: [Synth 8-3491] module 'binary_RSA' declared at 'C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.srcs/sources_1/imports/RSA_2016/binary_RSA.vhd:5' bound to instance 'Binary1' of component 'binary_RSA' [C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.srcs/sources_1/imports/Dig.design/RSACore.vhd:123]
+INFO: [Synth 8-3491] module 'binary_RSA' declared at 'C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.srcs/sources_1/imports/RSA_2016/binary_RSA.vhd:5' bound to instance 'Binary1' of component 'binary_RSA' [C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.srcs/sources_1/imports/Dig.design/RSACore.vhd:128]
 INFO: [Synth 8-638] synthesizing module 'binary_RSA' [C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.srcs/sources_1/imports/RSA_2016/binary_RSA.vhd:20]
-INFO: [Synth 8-3491] module 'blakley_RSA' declared at 'C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.srcs/sources_1/imports/RSA_2016/blakley_RSA.vhd:6' bound to instance 'Blakley1' of component 'blakley_RSA' [C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.srcs/sources_1/imports/RSA_2016/binary_RSA.vhd:112]
+INFO: [Synth 8-3491] module 'blakley_RSA' declared at 'C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.srcs/sources_1/imports/RSA_2016/blakley_RSA.vhd:6' bound to instance 'Blakley1' of component 'blakley_RSA' [C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.srcs/sources_1/imports/RSA_2016/binary_RSA.vhd:110]
 INFO: [Synth 8-638] synthesizing module 'blakley_RSA' [C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.srcs/sources_1/imports/RSA_2016/blakley_RSA.vhd:19]
-WARNING: [Synth 8-614] signal 'Rint' is read in the process but is not in the sensitivity list [C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.srcs/sources_1/imports/RSA_2016/blakley_RSA.vhd:33]
 INFO: [Synth 8-256] done synthesizing module 'blakley_RSA' (1#1) [C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.srcs/sources_1/imports/RSA_2016/blakley_RSA.vhd:19]
 INFO: [Synth 8-256] done synthesizing module 'binary_RSA' (2#1) [C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.srcs/sources_1/imports/RSA_2016/binary_RSA.vhd:20]
 INFO: [Synth 8-256] done synthesizing module 'RSACore' (3#1) [C:/Users/Kjersti/Documents/Skole/Dig.design/Project/RSA2016/RSA2016.srcs/sources_1/imports/Dig.design/RSACore.vhd:19]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 280.203 ; gain = 106.836
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 280.074 ; gain = 106.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 280.203 ; gain = 106.836
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 280.074 ; gain = 106.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 280.074 ; gain = 106.512
+---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7k70tfbv676-1
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 280.203 ; gain = 106.836
----------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'rsa_state_reg' in module 'RSACore'
 INFO: [Synth 8-5544] ROM "rsa_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
@@ -54,7 +53,7 @@ INFO: [Synth 8-5544] ROM "rsa_state" won't be mapped to Block RAM because addres
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'rsa_state_reg' using encoding 'sequential' in module 'RSACore'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 327.656 ; gain = 154.289
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 323.484 ; gain = 149.922
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -73,13 +72,13 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit       Adders := 2     
 +---Registers : 
 	              130 Bit    Registers := 1     
-	              128 Bit    Registers := 9     
+	              128 Bit    Registers := 7     
 	               32 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 5     
 +---Muxes : 
 	   4 Input    130 Bit        Muxes := 1     
-	   2 Input    128 Bit        Muxes := 5     
+	   2 Input    128 Bit        Muxes := 3     
 	   4 Input    128 Bit        Muxes := 3     
 	   7 Input    128 Bit        Muxes := 7     
 	   2 Input     32 Bit        Muxes := 3     
@@ -87,9 +86,9 @@ Detailed RTL Component Info :
 	   8 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 2     
 	   4 Input      2 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 10    
-	   2 Input      1 Bit        Muxes := 5     
-	   7 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -110,8 +109,8 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 3     
 	   7 Input     32 Bit        Muxes := 1     
 	   8 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
-	   7 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 6     
 Module blakley_RSA 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -120,19 +119,18 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit       Adders := 1     
 +---Registers : 
 	              130 Bit    Registers := 1     
-	              128 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   4 Input    130 Bit        Muxes := 1     
-	   2 Input    128 Bit        Muxes := 3     
+	   2 Input    128 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 4     
 Module binary_RSA 
 Detailed RTL Component Info : 
 +---Registers : 
-	              128 Bit    Registers := 4     
+	              128 Bit    Registers := 3     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
@@ -140,7 +138,7 @@ Detailed RTL Component Info :
 	   2 Input    128 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 5     
 	   2 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -154,14 +152,14 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 416.508 ; gain = 243.141
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 416.422 ; gain = 242.859
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 417.707 ; gain = 244.340
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 417.625 ; gain = 244.063
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 417.707 ; gain = 244.340
+Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 417.625 ; gain = 244.063
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -173,22 +171,22 @@ No constraint files found.
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 451.977 ; gain = 278.609
+Finished Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 450.754 ; gain = 277.191
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 451.977 ; gain = 278.609
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 450.754 ; gain = 277.191
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 451.977 ; gain = 278.609
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 450.754 ; gain = 277.191
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 451.977 ; gain = 278.609
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 450.754 ; gain = 277.191
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -200,7 +198,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 459.926 ; gain = 286.559
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 459.066 ; gain = 285.504
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -218,7 +216,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 459.926 ; gain = 286.559
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 459.066 ; gain = 285.504
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -231,7 +229,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 459.926 ; gain = 286.559
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 459.066 ; gain = 285.504
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -243,13 +241,13 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 459.926 ; gain = 286.559
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 459.066 ; gain = 285.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 459.926 ; gain = 286.559
+Start Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 459.066 ; gain = 285.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 459.926 ; gain = 286.559
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 459.066 ; gain = 285.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -267,48 +265,46 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |   119|
-|3     |LUT1   |   102|
-|4     |LUT2   |   715|
-|5     |LUT3   |   356|
-|6     |LUT4   |   364|
-|7     |LUT5   |   166|
-|8     |LUT6   |    84|
-|9     |MUXF7  |    25|
-|10    |MUXF8  |    10|
-|11    |FDCE   |   871|
-|12    |FDPE   |   135|
-|13    |FDRE   |   544|
-|14    |LDC    |   128|
-|15    |IBUF   |    36|
-|16    |OBUF   |    33|
+|3     |LUT1   |   105|
+|4     |LUT2   |   457|
+|5     |LUT3   |   226|
+|6     |LUT4   |   490|
+|7     |LUT5   |    46|
+|8     |LUT6   |   203|
+|9     |MUXF7  |    32|
+|10    |MUXF8  |    16|
+|11    |FDCE   |   746|
+|12    |FDPE   |     7|
+|13    |FDRE   |   416|
+|14    |IBUF   |    36|
+|15    |OBUF   |    33|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+-------------+------------+------+
 |      |Instance     |Module      |Cells |
 +------+-------------+------------+------+
-|1     |top          |            |  3689|
-|2     |  Binary1    |binary_RSA  |  2582|
-|3     |    Blakley1 |blakley_RSA |  1661|
+|1     |top          |            |  2933|
+|2     |  Binary1    |binary_RSA  |  1824|
+|3     |    Blakley1 |blakley_RSA |  1033|
 +------+-------------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 459.926 ; gain = 286.559
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 459.066 ; gain = 285.504
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 459.926 ; gain = 266.941
-Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 459.926 ; gain = 286.559
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 459.066 ; gain = 266.258
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 459.066 ; gain = 285.504
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 283 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 155 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 128 instances were transformed.
-  LDC => LDCE: 128 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-21 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+21 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 509.648 ; gain = 317.926
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 509.648 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Nov 19 15:12:47 2016...
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 505.918 ; gain = 314.457
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 505.918 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 19 16:07:27 2016...

@@ -87,10 +87,10 @@
         <Option Name="SimMode" Val="post-implementation"/>
         <Option Name="SrcSet" Val="sources_1"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/binary_tb_behav.wcfg"/>
-        <Option Name="xsim.simulate.runtime" Val="100ms"/>
       </Config>
     </FileSet>
     <FileSet Name="sim_2" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_2">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_2/imports/RSAExampleTestbench/RSAParameters.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../RSAExampleTestbench/RSAParameters.vhd"/>
@@ -140,7 +140,7 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="SimMode" Val="post-implementation"/>
         <Option Name="SrcSet" Val="sources_1"/>
-        <Option Name="xsim.simulate.runtime" Val="2000ns"/>
+        <Option Name="xsim.simulate.runtime" Val="10ms"/>
       </Config>
     </FileSet>
   </FileSets>

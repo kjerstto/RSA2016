@@ -30,7 +30,7 @@ component binary_RSA is
         );
 end component;
 
-type state_type is (idle, wait_state, read_e, read_n, read_m, RSA, RSA_out);
+type state_type is (wait_state, read_e, read_n, read_m, RSA, RSA_out);
 signal rsa_state: state_type;
 
 signal exp : std_logic_vector(W_BLOCK-1 downto 0);
@@ -53,15 +53,13 @@ begin
         n <= (others => '0');
         M <= (others => '0');
         
-        rsa_state <= idle;      
+        rsa_state <= wait_state;      
         
         resetn_binary <= '0';
         count <= 0;
     elsif (Clk'event and Clk = '1') then
         CoreFinished <= '1';
         case rsa_state is
-            when idle =>
-                rsa_state <= wait_state;
             when wait_state =>
                 if(InitRsa = '1') then
                     CoreFinished <= '0';
@@ -117,9 +115,10 @@ begin
                     DataOut <= Cshift(W_DATA-1 downto 0);
                     Cshift <= (others => '0');
                     Cshift(W_DATA*3 - 1 downto 0) <= Cshift(W_DATA*4 - 1 downto W_DATA);
+                    count <= count + 1;
                 else
                     count <= 0;
-                    rsa_state <= idle;
+                    rsa_state <= wait_state;
                 end if;                    
         end case;
     end if;
